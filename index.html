@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="w-full flex bg-white h-16 border border-b">
+        <div class="container mx-auto flex items-center relative z-20 justify-between h-full px-10">
+            <div class="flex-col flex">
+                <div class="flex md:hidden bg-gray-200 w-7 h-7 items-center justify-center rounded-full">
+                    <i id="bars" class="cursor-pointer fas fa-bars text-lg text-green-800"></i>
+                </div>
+                <div id="navCollpase"
+                    class="flex px-6 md:flex hidden flex-col md:static space-y-4 md:space-y-0 md:top-0 absolute top-28 left-0 md:flex-row w-full md:mt-0">
+                    <a class="uppercase md:border-none border-green-300 md:pb-0 pb-4 border-b text-sm pr-3"
+                        href="#home">Home
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <a class="uppercase md:border-none border-green-300 md:pb-0 pb-4 border-b text-sm pr-3"
+                        href="#shop">Shop
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <a class="uppercase md:border-none border-green-300 md:pb-0 pb-4 border-b text-sm pr-3"
+                        href="#about">About Us</a>
+                    <a class="uppercase md:border-none border-green-300 md:pb-0 pb-4 border-b text-sm"
+                        href="#about">contact</a>
+                </div>
+            </div>
+            <div class="flex">
+                <a class="font-semibold text-lg" href="#">canvas</a>
+            </div>
+            <div class="flex">
+                <i class="fas fa-search pr-3 cursor-pointer text-md"></i>
+                <i class="fas fa-shopping-cart cursor-pointer text-md"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="w-full flex hero-c">
+        <div class="container lg:flex-row flex-col flex mx-auto h-full overflow-hidden">
+            <div
+                class="flex flex-col mt-36 md:items-start px-10 2xl:w-5/12 lg:w-8/12 w-full lg:absolute items-center z-10">
+                <h1 class="text-gray-400 text-sm text-center">QUALITY IS EVERYONE'S RESPONSIBILTY</h1>
+                <h3 class="md:text-5xl text-2xl sm:3xl md:text-left text-center text-white mt-3 tracking-wider
+                    " style="line-height: 1.2em;">A Home Is Not A Home <br class="hidden lg:block"> Without
+                    Furniture</h3>
+                <button class="bg-white mt-10 text-lg py-2 w-40 text-green-800 hover:bg-green-50"><i
+                        class="fas pr-3 fa-shopping-basket"></i>Shop now</button>
+            </div>
+            <div
+                class="flex flex-shrink-0 px-2 2xl:w-9/12 lg:w-11/12 w-10/12 mx-auto lg:border-none transform 2xl:translate-x-48 xl:translate-x-24 translate-x-0 lg:translate-x-12 lg:mt-0 border-gray-500 mt-10 border-t">
+                <img src="./img/hero.png" class="w-12/12 object-cover" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="flex w-full bg-primary pb-16">
+        <div class="container mx-auto mt-40">
+            <h1 class="text-4xl font-light text-center tracking-wider">Why Choose Us?</h1>
+            <div class="flex flex-wrap justify-center">
+                <div class="flex flex-col w-96 m-5 items-center">
+                    <i class="fas fa-globe-americas text-6xl text-green-900"></i>
+                    <h1 class="text-green-900 text-2xl py-2">Woldwide Brand</h1>
+                    <p class="text-green-900 text-center">Powerful Layout with Responsive functionality that can be
+                        adapted to any
+                        screen size. Resize browser to view.</p>
+                </div>
+                <div class="flex flex-col w-96 m-5 items-center">
+                    <i class="fas fa-trophy text-6xl text-green-900"></i>
+                    <h1 class="text-green-900 text-2xl py-2">Award Winner</h1>
+                    <p class="text-green-900 text-center">Looks beautiful & ultra-sharp on Retina Screen Displays.
+                        Retina Icons, Fonts & all others graphics are optimized.</p>
+                </div>
+                <div class="flex flex-col w-96 m-5 items-center">
+                    <i class="fas fa-smile text-6xl text-green-900"></i>
+                    <h1 class="text-green-900 text-2xl py-2">Happily Service</h1>
+                    <p class="text-green-900 text-center">Canvas includes tons of optimized code that are completely
+                        customizable and deliver unmatched fast performance.</p>
+                </div>
+            </div>
+            <div class="w-5/12 flex mx-auto mt-20 flex-wrap justify-center">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/amazon.svg" alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/cnn.svg" alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/google.svg" alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/linkedin.svg"
+                    alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/netflix.svg" alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/jetblue.svg" alt="">
+                <img class="w-28 m-5 object-contain opacity-50"
+                    src="http://themes.semicolonweb.com/html/canvas/demos/furniture/images/sponsors/github.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex py-10">
+        <div class="container flex mx-auto mt-10 flex-col">
+            <h1 class="text-center text-4xl">Shop by Category</h1>
+            <button
+                class="border rounded hover:bg-gray-900 hover:text-white transition duration-150 mx-auto mt-5 w-36 py-2"><i
+                    class="fas pr-1 fa-box"></i> View
+                All</button>
+            <div class="flex flex-wrap mt-10 justify-center">
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/6YdKyty/sofas.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        Sofas
+                    </h1>
+                </div>
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/18JDbJp/tables.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        tables
+                    </h1>
+                </div>
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/X54h7h3/chairs.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        chairs
+                    </h1>
+                </div>
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/FDrPrpG/lights.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        lights
+                    </h1>
+                </div>
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/MMVStqv/wardrobes.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        wardrobes
+                    </h1>
+                </div>
+                <div class="flex 2xl:w-3/12 xl:w-4/12 lg:w-4/12 w-10/12 px-1 mx-1 my-2 relative">
+                    <div class="flex">
+                        <img class="object-contain" src="https://i.ibb.co/DDSyw88/beds.jpg" alt="...">
+                    </div>
+                    <h1
+                        class="uppercase text-green-900 tracking-wider absolute bottom-0 bg-white sm:py-3 sm:px-5 px-3 py-1 left-0">
+                        beds
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex bg-gray-100 py-20">
+        <div class="container flex flex-wrap mx-auto justify-center">
+            <div class="flex flex-col w-full px-1 sm:w-9/12 mr-1 mt-16">
+                <h1 class="text-2xl font-semibold px-2 text-green-900 text-center py-2">New Arrivals</h1>
+                <p class="text-gray-500 xl:w-7/12 mx-auto px-2 text-center">Compellingly cultivate synergistic
+                    infrastructures rather than fully
+                    tested
+                    opportunities. Synergistically evisculate web-enabled interfaces.</p>
+                <div class="flex mt-5 sm:flex-row flex-col mx-auto">
+                    <button
+                        class="py-2 bg-transparent mt-2 border border-2 border-green-900 text-sm px-5 hover:bg-gray-900 transition duration-150 hover:text-white mr-2">new
+                        arrivals</button>
+                    <button
+                        class="py-2 bg-transparent mt-2 border border-2 border-green-900 text-sm px-5 hover:bg-gray-900 transition duration-150 hover:text-white mr-2">popular</button>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative  showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex nonesho">
+                            <img src="https://i.ibb.co/jktDxg0/2.jpg" alt="...">
+                        </div>
+                        <div class="flex overly absolute bottom-0 left-0">
+                            <img src="https://i.ibb.co/mH0Cr6W/2-1.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">Light Grey Sofa</a>
+                    <p class="py-1"><span class="text-sm">$</span>799.99</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex nonesho">
+                            <img src="https://i.ibb.co/8XcqwXj/3.jpg" alt="...">
+                        </div>
+                        <div class="flex overly absolute bottom-0 left-0">
+                            <img src="https://i.ibb.co/3rrFzLK/3-1.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">Celling Lights</a>
+                    <p class="py-1"><span class="text-sm">$</span>39.49</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex nonesho">
+                            <img src="https://i.ibb.co/dKzSvLz/4-1.jpg" alt="...">
+                        </div>
+                        <div class="flex overly absolute bottom-0 left-0">
+                            <img src="https://i.ibb.co/Gxh6F3b/4.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">High Stand Chairs</a>
+                    <p class="py-1"><span class="text-sm">$</span>24.49</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex nonesho">
+                            <img src="https://i.ibb.co/60hdhjY/5.jpg" alt="...">
+                        </div>
+                        <div class="flex overly absolute bottom-0 left-0">
+                            <img src="https://i.ibb.co/HVsTQy6/5-1.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">Dining Sofa with Tea-table</a>
+                    <p class="py-1"><span class="text-sm">$</span>99.99</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex">
+                            <img src="https://i.ibb.co/6tR4hyG/6.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">Bathroom Cloths Shelves</a>
+                    <p class="py-1"><span class="text-sm">$</span>23</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-5/12 w-10/12 md:w-5/12 xl:w-3/12 mx-2 mt-16">
+                <div class="flex relative showover">
+                    <div class="flex transition-all duration-200">
+                        <div class="flex">
+                            <img src="https://i.ibb.co/r4HM70G/7.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="flex overly">
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white left-2 rounded cursor-pointer flex">
+                            <i class="fab text-black fa-shopify"></i>
+                        </div>
+                        <div
+                            class="absolute bottom-3 items-center justify-center w-10 h-10 bg-white right-3 rounded cursor-pointer flex">
+                            <i class="fas text-black fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-2 flex-col">
+                    <a href="#" class="italic text-lg">Golden Lamp for Room</a>
+                    <p class="py-1"><span class="text-sm">$</span>12.49</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex h-full">
+        <div class="container flex-col lg:flex-row flex mx-auto">
+            <div class="flex w-full pt-5 lg:w-6/12">
+                <img src="https://i.ibb.co/VVB3mPy/section.jpg" alt="...">
+            </div>
+            <div class="flex flex-col justify-center md:ml-10 px-2 w-full lg:w-4/12">
+                <h1 class="text-3xl py-5 leading-10">Explore your Home & Office with our Furnitures</h1>
+                <p class="text-lg leading-7 font-light">Compellingly cultivate synergistic infrastructures rather than
+                    fully tested
+                    opportunities. Synergistically evisculate web-enabled interfaces for market positioning web
+                    services.
+                    Continually create business infomediaries and interdependent products.</p>
+                <button
+                    class="w-48 font-semibold py-2 mt-10 hover:bg-gray-900 uppercase transition duration-150 hover:text-white border border-gray-200">discover
+                    now <i class="fas fa-arrow-right pl-2"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="flex bg-red-50 w-full mt-10 py-10">
+        <div class="container justify-center flex-wrap mx-auto flex">
+            <div class="flex flex-col w-96 items-center mx-2">
+                <img class="w-16" src="https://image.flaticon.com/icons/png/128/711/711982.png" alt="...">
+                <h1 class="text-2xl py-5 font-medium text-center">Original & Excellent Quality</h1>
+                <p class="text-center pt-1 pb-5">Completely formulate top-line resources rather than cross-media portals
+                    cross-platform solutions.</p>
+            </div>
+            <div class="flex flex-col w-96 items-center mx-2">
+                <img class="w-16" src="https://image.flaticon.com/icons/png/128/3233/3233997.png" alt="...">
+                <h1 class="text-2xl py-5 font-medium">Free & Fast Shipping</h1>
+                <p class="text-center pt-1 pb-5">Rapidiously optimize user-centric catalysts for change vis-a-vis
+                    granular
+                    "outside the box" thinking.
+                </p>
+            </div>
+            <div class="flex flex-col w-96 items-center mx-2">
+                <img class="w-16" src="https://image.flaticon.com/icons/png/128/890/890158.png" alt="...">
+                <h1 class="text-2xl py-5 font-medium">Secure Payment</h1>
+                <p class="text-center pt-1 pb-5">Continually recaptiualize 2.0 action items after global information.
+                    Efficiently
+                    strategize holistic
+                    networks.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap w-full pb-20" style="height: auto; background: #193532;">
+        <div class="container mx-auto flex flex-col">
+            <div class="flex flex-col py-10">
+                <h1 class="text-white text-center py-2 text-2xl flex flex-col">follow us on Instagram</h1>
+                <button
+                    class="text-white text-xl hover:bg-white hover:text-gray-900 mt-2 py-1 mx-auto w-36 rounded border border-white"><i
+                        class="fab fa-instagram"></i> @fancy</button>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1 ">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/CnbDNVn/1.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/h19Z60z/2-1.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/KrkkmQZ/5grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/TPLpz9d/6grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/X2JSW5j/3grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/8Y0Gm4g/4grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/DKJP53Q/7grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+                <div class="flex relative md:w-80 w-11/12 sm:w-9/12 showover h-80 m-1">
+                    <div class="flex w-full h-full">
+                        <img class="object-cover w-full h-full" src="https://i.ibb.co/zx6qRBv/8grid.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute bottom-0 w-full h-full overly flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="fab fa-instagram text-white text-3xl cursor-pointer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full py-20">
+        <div class="container mx-auto flex flex-wrap justify-between px-2 ">
+            <div class="flex flex-col w-40 mt-5">
+                <ul class="flex flex-col">
+                    <li class="text-md pb-5">Social</li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#"><i class="fab pr-5 fa-facebook"></i>facebook</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#"><i
+                                class="fab pr-5 fa-instagram"></i>instagram</a></li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#"><i class="fab pr-5 fa-twitter"></i>twitter</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#"><i class="fab pr-5 fa-youtube"></i>youtube</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#"><i class="fab pr-5 fa-whatsapp"></i>whatsapp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col w-40 mt-5">
+                <ul class="flex flex-col">
+                    <li class="text-md pb-5">Support</li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">Home</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">About</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col w-40 mt-5">
+                <ul class="flex flex-col">
+                    <li class="text-md pb-5">Trending</li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">shop</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">single</a>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">WHO ARE WE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col w-40 mt-5">
+                <ul class="flex flex-col">
+                    <li class="text-md pb-5">Get to Know us</li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">NICHE DEMOS</a>
+                    </li>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">HOME PAGES</a>
+                    <li class="text-sm py-2 text-gray-600"><a href="#">ONE PAGES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col sm:w-96 w-72 mt-5">
+                <h1>SUBSCRIBE US</h1>
+                <p class="mt-6 text-gray-400 font-light">Subscribe to Our Newsletter to get Important News, Amazing
+                    Offers & Inside
+                    Scoops:</p>
+                <div class="flex mt-4">
+                    <input type="text"
+                        class="border h-10 outline-none placeholder-gray-100 bg-gray-200 border-gray-900 px-2 w-44 sm:w-80"
+                        autocomplete="off">
+                    <button type="button" class="bg-gray-900 text-white sm:px-2 px-1 text-sm">subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

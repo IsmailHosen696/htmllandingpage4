@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html::selection {
+  background: #193532;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero-c {
+  min-height: 70vh;
+  background-image: linear-gradient(
+    to bottom,
+    #375754 0%,
+    #193532 90%,
+    #ebf1f0 90%
+  );
+}
+.bg-primary {
+  background: #ebf1f0;
+}
+.overly {
+  transition: 0.3s all;
+  opacity: 0;
+}
+.showover:hover .overly {
+  opacity: 1;
+}
+.showover:hover .nonesho {
+  opacity: 0;
+}
